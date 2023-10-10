@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    all: unset;
+}
+body{
+    background-color: rgb(255, 251, 246);
+}
+.container {
+    margin: 20px;
+}
+nav {
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+    z-index: 1;
+}
+
+.fa-bars{
+
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(164, 136, 100);
+
+}
+.menu{
+    height: 100%;
+    width: 20vh;
+    background: rgba(181, 153, 99, 0.05);
+    transform: translateX(-220px);
+    transition: 0.2s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.menu.active{
+    transform: translateX(0);
+}
+
+ul{
+    padding-top: 100px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+}
+li{
+    padding-bottom: 40px;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(164, 136, 100);
+}
+
+.exit{
+    display: flex;
+    justify-content: end;
+}
+.fa-xmark{
+    font-size: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: rgb(164, 136, 100);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.modalButton {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid rgb(164, 136, 100);
+    color: rgb(164, 136, 100);
+    box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    
+}
+.modal{
+    display: none;
+}
+.modalContent{
+    width: 300px;
+    background-color: rgb(255, 245, 233);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(164, 136, 100);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.modal-open{
+    background-color: rgba(0, 0, 0, 0.25);
+}
